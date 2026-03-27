@@ -7,7 +7,7 @@ int main() {
 
     printf("address of n: %d\n", p);
 
-    printf("*p = %d\n", &p);
+    printf("*p = %d\n", *p);
 
     *p = 99;
     printf("n = %d\n", n);
