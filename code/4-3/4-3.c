@@ -12,6 +12,6 @@ int main() {
         printf("address of arr[%d+1]: %p\n", i, addr_1);
         printf("&(arr[%d]) - &(arr[%d+1]) = %d\n", i, i+1, (unsigned long long)addr_1 - (unsigned long long)addr_0);
         printf("\n");
-    return 0;
     }
+    return 0;
 }
