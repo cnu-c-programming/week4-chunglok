@@ -13,4 +13,5 @@ int main() {
         printf("&(arr[%d]) - &(arr[%d+1]) = %d\n", i, i+1, (unsigned long long)addr_1 - (unsigned long long)addr_0);
         printf("\n");
     return 0;
+    }
 }
