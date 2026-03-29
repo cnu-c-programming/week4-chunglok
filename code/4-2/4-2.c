@@ -2,21 +2,21 @@
 
 int sum(int arr[], int n){
     int s = 0;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < 6; i++){
         s += arr[i];
     }
     printf("%d\n", s);
 }
 double average(int arr[], int n){
     int s = 0;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < 6; i++){
         s += arr[i];
     }
     printf("%d\n", s/n);
 }
 int max(int arr[], int n){
     int m = 0;
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i < 6; i++){
         if(m < arr[i])
             m = arr[i];
     }
