@@ -9,5 +9,6 @@ int main() {
         else{
             logger("odd");
         }
+    }
     return 0;
 }
