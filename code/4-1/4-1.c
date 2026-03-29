@@ -7,7 +7,7 @@ int main() {
         printf("%d", a[i]);
     printf("\n");
 
-    int b[5] = {1, 2, 3};
+    int b[5] = {1, 2};
     
     for(int i = 0; i < 5; i++)
         printf("%d", b[i]);
