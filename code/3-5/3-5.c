@@ -2,17 +2,15 @@
 
 void my_print(char type, void* x) {
     
-    if(type == 'C'){
-        char *cx = (char *)x;
-        printf("%c\n", *cx);
-    }
-    else if(type == 'D'){
-        int *nx = (int *)x;
-        printf("%d\n", *nx);
-    }
-    else if(type == 'S'){
-        char *sx = (char *)x;
-        printf("%s\n", (char*)x);
+   if(type == 'C') {
+        char *cp = (char*)x;
+        printf("%c\n", *cp);
+    } else if(type == 'D') {
+        int *ip = (int*)x;
+        printf("%d\n", *ip);
+    } else if(type == 'S'){
+        char *sp = (char*)x;
+        printf("%s\n", sp);
     }
 }
 int main() {
@@ -20,10 +18,10 @@ int main() {
     char b = 'b';
     char* c = "Hello, World!";
 
-    my_print("C", &a);
-    my_print("D", &b);
-    my_print("S", c);
-    my_print("C", c);
+    my_print('C', &a);
+    my_print('D', &b);
+    my_print('S', c);
+    my_print('C', c);
 
     return 0;
 }
