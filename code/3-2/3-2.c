@@ -1,7 +1,15 @@
 #include <stdio.h>
 
 void swap_endian(int *x) {
-    char* addr = (char *)x;
+    unsigned char *addr = (unsigned char *)x;
+    unsigned char chg1, chg2;
+    chg1 = *addr;
+    *addr = *(addr + 3);
+    *(addr + 3) = chg1;
+
+    chg2 = *(addr + 1);
+    *(addr + 1) = *(addr + 2);  
+    *(addr + 2) = chg2;
     
 }
 
