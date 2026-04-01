@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int sum(int arr[], int n){
-    int s = 0;
+    int total = 0;
     for(int i = 0; i < 6; i++){
-        s += arr[i];
+        total += arr[i];
     }
-    printf("%d\n", s);
+    return total;
 }
 double average(int arr[], int n){
-    int s = 0;
+    int total = 0;
     for(int i = 0; i < 6; i++){
-        s += arr[i];
+        total += arr[i];
     }
-    printf("%d\n", s/n);
+    return total / n;
 }
 int max(int arr[], int n){
     int m = 0;
@@ -20,7 +20,7 @@ int max(int arr[], int n){
         if(m < arr[i])
             m = arr[i];
     }
-    printf("%d\n", m);
+    return m;
 }
 
 int main() {
@@ -28,7 +28,7 @@ int main() {
     int n = sizeof(arr) / sizeof(arr[0]);
 
     printf("sum: %d\n", sum(arr, n));
-    printf("avg: %d\n", average(arr, n));
+    printf("avg: %.2f\n", average(arr, n));
     printf("max: %d\n", max(arr, n));
 
     return 0;
